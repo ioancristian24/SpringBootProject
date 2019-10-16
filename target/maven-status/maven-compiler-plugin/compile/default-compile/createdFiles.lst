@@ -1,0 +1,5 @@
+com\sda\services\ManagerService.class
+com\sda\entities\Employee.class
+com\sda\dto\ManagerDTO.class
+com\sda\dto\EmployeesDTO.class
+com\sda\implementationDAO\EmployeesDAO.class
