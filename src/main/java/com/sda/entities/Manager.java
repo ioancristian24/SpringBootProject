@@ -20,8 +20,20 @@ public class Manager {
     @Column(name = "age")
     private Integer age;
 
-    @Column(name = "department_managed")
-    private String departmentManaged;
+    @OneToOne
+    @JoinColumns({@JoinColumn(name = "department_managed", referencedColumnName = "name")})
+    private Department department;
+
+    public Manager() {
+    }
+
+    public Department getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(Department department) {
+        this.department = department;
+    }
 
     public Integer getId() {
         return id;
@@ -55,14 +67,6 @@ public class Manager {
         this.age = age;
     }
 
-    public String getDepartmentManaged() {
-        return departmentManaged;
-    }
-
-    public void setDepartmentManaged(String departmentManaged) {
-        this.departmentManaged = departmentManaged;
-    }
-
     @Override
     public String toString() {
         return "Manager{" +
@@ -70,7 +74,7 @@ public class Manager {
                 ", name='" + name + '\'' +
                 ", position='" + position + '\'' +
                 ", age=" + age +
-                ", departmentManaged='" + departmentManaged + '\'' +
+                ", departmentManaged='" + department + '\'' +
                 '}';
     }
 }

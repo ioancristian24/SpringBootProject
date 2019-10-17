@@ -21,7 +21,7 @@ public class ManagerController {
     @ResponseBody
     public ResponseEntity displayManagers(){
 
-        List<ManagerDTO> managerDTOList = managerService.displayManagers();
+        List<ManagerDTO> managerDTOList = managerService.displayAllManagers();
 
         return new ResponseEntity(managerDTOList, HttpStatus.OK);
     }

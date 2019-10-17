@@ -21,7 +21,7 @@ public class DepartmentController {
     @ResponseBody
     public ResponseEntity displayDepartments(){
 
-        List<DepartmentDTO> departmentDTOList = departmentService.displayDepartmentsDTO();
+        List<DepartmentDTO> departmentDTOList = departmentService.displayAllDepartments();
 
         return new ResponseEntity(departmentDTOList, HttpStatus.OK);
     }

@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a1949fc-0374-467c-9bcd-d165949234e9" name="Default Changelist" comment="" />
+    <list default="true" id="5a1949fc-0374-467c-9bcd-d165949234e9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/controller/DepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/controller/DepartmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/controller/ManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/controller/ManagerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/dto/DepartmentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/dto/DepartmentDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/dto/ManagerDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/dto/ManagerDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/entities/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/entities/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/entities/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/entities/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/implementationDAO/DepartmentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/implementationDAO/DepartmentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/implementationDAO/ManagerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/implementationDAO/ManagerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/implementationDAO/implementation/DepartmentDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/implementationDAO/implementation/DepartmentDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/implementationDAO/implementation/ManagerDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/implementationDAO/implementation/ManagerDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/mapper/DepartmentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/mapper/DepartmentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/mapper/ManagerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/mapper/ManagerMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/repositories/DepartmentRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/repositories/DepartmentRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/repositories/ManagerRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/repositories/ManagerRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/services/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/services/DepartmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/services/ManagerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/services/ManagerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/controller/DepartmentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sda/controller/DepartmentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/controller/ManagerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sda/controller/ManagerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/dto/DepartmentDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sda/dto/DepartmentDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/dto/ManagerDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sda/dto/ManagerDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/entities/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sda/entities/Department.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/entities/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sda/entities/Manager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/implementationDAO/DepartmentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sda/implementationDAO/DepartmentDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/implementationDAO/ManagerDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sda/implementationDAO/ManagerDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/implementationDAO/implementation/DepartmentDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sda/implementationDAO/implementation/DepartmentDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/implementationDAO/implementation/ManagerDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sda/implementationDAO/implementation/ManagerDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/mapper/DepartmentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sda/mapper/DepartmentMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/mapper/ManagerMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sda/mapper/ManagerMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/repositories/DepartmentRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sda/repositories/DepartmentRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/repositories/ManagerRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sda/repositories/ManagerRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/services/DepartmentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sda/services/DepartmentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/services/ManagerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sda/services/ManagerService.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +53,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -27,6 +64,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1S97v7UYGJO464TRXDraTyNvSKu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -81,11 +119,25 @@
       <workItem from="1570964194063" duration="7236000" />
       <workItem from="1571166572114" duration="5957000" />
       <workItem from="1571247406445" duration="4862000" />
-      <workItem from="1571252915443" duration="4358000" />
+      <workItem from="1571252915443" duration="5331000" />
+      <workItem from="1571334824915" duration="10626000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
