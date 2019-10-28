@@ -16,8 +16,23 @@ public class ManagerDaoImpl implements ManagerDAO {
 
 
     @Override
-    public void addManager(Manager manager) {
-
+    public Manager addManager(Manager manager) {
+        System.out.println("Am ajuns in clasa ManagerDaoImpl");
+        Manager manager1 = null;
+        try(Session session = HibernateUtils.getSessionFactory().openSession()) {
+            session.beginTransaction();
+            Integer id = (Integer) session.save(manager);
+            System.out.println("Manager was created with id " + id);
+            session.getTransaction().commit();
+            if (id != null){
+                manager1 = session.get(Manager.class, id);
+            }else {
+                System.out.println("Manager was not created !");
+            }
+        }catch (HibernateException e){
+            e.printStackTrace();
+        }
+        return manager1;
     }
 
     @Override

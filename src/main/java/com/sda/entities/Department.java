@@ -16,24 +16,35 @@ public class Department implements Serializable {
     @Column(name = "name")
     private String name;
 
-    @OneToOne(mappedBy = "department")
-    private Manager manager;
+    /*@OneToMany(mappedBy = "department", fetch = FetchType.EAGER)
+    private List<Employee> employeeList = new ArrayList<>();
+*/
+    /*@OneToOne(mappedBy = "department", fetch = FetchType.EAGER)
+    private Manager manager;*/
 
     public Department() {
     }
 
-    public Department(String name, Manager manager) {
+    public Department(String name) {
         this.name = name;
-        this.manager = manager;
+        /*this.manager = manager;*/
     }
 
-    public Manager getManager() {
+    /*public List<Employee> getEmployeeList() {
+        return employeeList;
+    }
+
+    public void setEmployeeList(List<Employee> employeeList) {
+        this.employeeList = employeeList;
+    }*/
+
+    /*public Manager getManager() {
         return manager;
     }
 
     public void setManager(Manager manager) {
         this.manager = manager;
-    }
+    }*/
 
     public Integer getId() {
         return id;
@@ -56,7 +67,6 @@ public class Department implements Serializable {
         return "Department{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", manager=" + manager +
                 '}';
     }
 
@@ -66,12 +76,13 @@ public class Department implements Serializable {
         if (o == null || getClass() != o.getClass()) return false;
         Department that = (Department) o;
         return Objects.equals(id, that.id) &&
-                Objects.equals(name, that.name) &&
-                Objects.equals(manager, that.manager);
+                Objects.equals(name, that.name);
+                /*Objects.equals(employeeList, that.employeeList) &&*/
+                /*Objects.equals(manager, that.manager)*/
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, manager);
+        return Objects.hash(id, name);
     }
 }

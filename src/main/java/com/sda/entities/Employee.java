@@ -20,6 +20,27 @@ public class Employee {
     @Column(name = "age")
     private Integer age;
 
+   /* @ManyToOne
+    @JoinColumns({@JoinColumn(name = "department_to_which_they_belong", referencedColumnName = "name")})
+    private Department department;*/
+
+    public Employee(String name, String position, Integer age) {
+        this.name = name;
+        this.position = position;
+        this.age = age;
+    }
+
+    public Employee() {
+    }
+
+   /* public Department getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(Department department) {
+        this.department = department;
+    }*/
+
     public Integer getId() {
         return id;
     }

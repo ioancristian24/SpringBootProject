@@ -5,6 +5,15 @@ public class EmployeeDTO {
     private String name;
     private String position;
     private Integer age;
+    /*private Department department;*/
+
+    /*public Department getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(Department department) {
+        this.department = department;
+    }*/
 
     public String getName() {
         return name;

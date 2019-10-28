@@ -5,9 +5,7 @@ import com.sda.services.ManagerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -24,5 +22,12 @@ public class ManagerController {
         List<ManagerDTO> managerDTOList = managerService.displayAllManagers();
 
         return new ResponseEntity(managerDTOList, HttpStatus.OK);
+    }
+
+    @PostMapping(consumes = "application/json", produces = "application/json", path = "/addManager")
+    public ManagerDTO addManager(@RequestBody ManagerDTO managerDTO){
+
+        ManagerDTO managerDTO1 = managerService.addManager(managerDTO);
+        return managerDTO1;
     }
 }

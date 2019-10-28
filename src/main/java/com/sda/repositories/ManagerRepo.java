@@ -24,4 +24,10 @@ public class ManagerRepo {
         List<Manager> managerList = getManagerDao().displayAllManagers();
         return managerList;
     }
+
+    public Manager createManager(Manager manager) {
+        System.out.println("Am ajuns in clasa ManagerRepo");
+        getManagerDao().addManager(manager);
+        return manager;
+    }
 }

@@ -15,8 +15,23 @@ import java.util.List;
 public class DepartmentDaoImpl implements DepartmentDAO {
 
     @Override
-    public void addDepartment(Department department) {
-
+    public Department addDepartment(Department department) {
+        System.out.println("Am ajuns in clasa DepartmentDaoImpl");
+        Department department1 = null;
+        try(Session session = HibernateUtils.getSessionFactory().openSession()){
+            session.beginTransaction();
+            Integer id = (Integer) session.save(department);
+            System.out.println("Department was created with id " + id);
+            session.getTransaction().commit();
+            if (id != null){
+                department1 = session.get(Department.class, id);
+            }else {
+                System.out.println("Department was not created! ");
+            }
+        }catch (HibernateException e){
+            e.printStackTrace();
+        }
+        return department1;
     }
 
     @Override
@@ -47,5 +62,47 @@ public class DepartmentDaoImpl implements DepartmentDAO {
     @Override
     public void deleteDepartmentById(Integer id) {
 
+    }
+
+    public List<Department> displayDepartmentByName(String name) {
+        List<Department>departmentList = new ArrayList<>();
+        try(Session session = HibernateUtils.getSessionFactory().openSession()){
+            session.beginTransaction();
+            String HQL = "FROM Department WHERE name LIKE: name";
+            Query query = session.createQuery(HQL);
+            query.setParameter("name", "%" + name + "%");
+            departmentList = query.list();
+            session.getTransaction().commit();
+        }catch (HibernateException e){
+            e.printStackTrace();
+        }
+        return departmentList;
+    }
+
+    public boolean deleteDepartmentByName(String name) {
+        boolean isDeleted = false;
+        try(Session session = HibernateUtils.getSessionFactory().openSession()){
+            session.beginTransaction();
+            String countHQL = "SELECT COUNT (*) FROM Department WHERE name=: name";
+            Query countQuery = session.createQuery(countHQL);
+            countQuery.setParameter("name", name);
+            Long countResult = (Long) countQuery.uniqueResult();
+            if (countResult != 1){
+                isDeleted = false;
+            }else {
+                String deleteHQL = "DELETE FROM Department WHERE name =: name";
+                Query deleteQuery = session.createQuery(deleteHQL);
+                deleteQuery.setParameter("name", name);
+                Integer deleteResult = deleteQuery.executeUpdate();
+                if (deleteResult != 1){
+                    isDeleted = false;
+                }else {
+                    isDeleted = true;
+                }
+            }
+        }catch (HibernateException e){
+            e.printStackTrace();
+        }
+        return isDeleted;
     }
 }

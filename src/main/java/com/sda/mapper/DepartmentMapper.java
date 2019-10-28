@@ -10,6 +10,13 @@ public class DepartmentMapper {
     public DepartmentDTO convertDepartmentToDepartmentDTO(Department department){
         DepartmentDTO departmentDTO = new DepartmentDTO();
         departmentDTO.setName(department.getName());
+        /*departmentDTO.setEmployeeList(department.getEmployeeList());*/
         return departmentDTO;
+    }
+
+    public Department convertDepartemntDTOToDepartemnt(DepartmentDTO departmentDTO){
+        Department department = new Department();
+        department.setName(departmentDTO.getName());
+        return department;
     }
 }

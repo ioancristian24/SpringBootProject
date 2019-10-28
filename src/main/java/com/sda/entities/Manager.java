@@ -20,20 +20,20 @@ public class Manager {
     @Column(name = "age")
     private Integer age;
 
-    @OneToOne
+    /*@OneToOne
     @JoinColumns({@JoinColumn(name = "department_managed", referencedColumnName = "name")})
-    private Department department;
+    private Department department;*/
 
     public Manager() {
     }
 
-    public Department getDepartment() {
+    /*public Department getDepartment() {
         return department;
     }
 
     public void setDepartment(Department department) {
         this.department = department;
-    }
+    }*/
 
     public Integer getId() {
         return id;
@@ -74,7 +74,6 @@ public class Manager {
                 ", name='" + name + '\'' +
                 ", position='" + position + '\'' +
                 ", age=" + age +
-                ", departmentManaged='" + department + '\'' +
                 '}';
     }
 }

@@ -1,16 +1,14 @@
 package com.sda.dto;
 
-import com.sda.entities.Department;
-
 public class ManagerDTO extends EmployeeDTO {
 
-    private Department departmentManaged;
+    private String departmentManaged;
 
-    public Department getDepartmentManaged() {
+    public String getDepartmentManaged() {
         return departmentManaged;
     }
 
-    public void setDepartmentManaged(Department departmentManaged) {
+    public void setDepartmentManaged(String departmentManaged) {
         this.departmentManaged = departmentManaged;
     }
 

@@ -4,6 +4,7 @@ import com.sda.dto.ManagerDTO;
 import com.sda.entities.Manager;
 import com.sda.mapper.ManagerMapper;
 import com.sda.repositories.ManagerRepo;
+import com.sda.validators.ManagerValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +13,9 @@ import java.util.List;
 
 @Service
 public class ManagerService {
+
+    @Autowired
+    private ManagerValidator managerValidator;
 
     @Autowired
     private ManagerMapper managerMapper;
@@ -54,5 +58,19 @@ public class ManagerService {
             managerDTOList.add(managerMapper.convertManagerToManagerDTO(manager));
         }
         return managerDTOList;
+    }
+
+    public ManagerDTO addManager(ManagerDTO managerDTO) {
+        System.out.println("Am ajuns in clasa ManagerService! ");
+        ManagerDTO managerDTO1 = null;
+        if (managerValidator.isValidDTO(managerDTO)){
+            Manager manager = managerMapper.convertManagerDTOToManager(managerDTO);
+            Manager manager1 = getManagerRepo().createManager(manager);
+
+            managerDTO1 = managerMapper.convertManagerToManagerDTO(manager1);
+        }else {
+            System.out.println("Valorile introduse nu indeplinesc conditiile de eligibilitate. ");
+        }
+        return managerDTO1;
     }
 }
